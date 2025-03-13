@@ -1,0 +1,20 @@
+2025-03-12 00:20:36,550 - INFO - Succesfully read the YAML file
+2025-03-12 00:20:56,742 - INFO - Succesfully read the YAML file
+2025-03-12 00:20:56,743 - INFO - Data Ingestion started with gcphotelbucket and file is Hotel_Reservations.csv
+2025-03-12 00:20:56,743 - INFO - Starting Data Ingestion process
+2025-03-12 00:20:56,745 - ERROR - Error occurred while downloading file: File "D:\Hotel_Reservation\dazzling-ego-453401-c9-ec43d2431a0c.json" was not found.
+2025-03-12 00:20:56,746 - INFO - Data Ingestion process completed
+2025-03-12 00:25:11,764 - INFO - Succesfully read the YAML file
+2025-03-12 00:25:11,764 - INFO - Data Ingestion started with gcphotelbucket and file is Hotel_Reservations.csv
+2025-03-12 00:25:11,764 - INFO - Starting Data Ingestion process
+2025-03-12 00:25:11,764 - ERROR - Error occurred while downloading file: File "D:\Hotel_Reservation\dazzling-ego-453401-c9-ec43d2431a0c.json" was not found.
+2025-03-12 00:25:11,764 - INFO - Data Ingestion process completed
+2025-03-12 00:31:31,154 - INFO - Succesfully read the YAML file
+2025-03-12 00:31:31,155 - INFO - Data Ingestion started with gcphotelbucket and file is Hotel_Reservations.csv
+2025-03-12 00:31:31,155 - INFO - Starting Data Ingestion process
+2025-03-12 00:31:33,223 - INFO - Downloaded Hotel_Reservations.csv from gcphotelbucket successfully
+2025-03-12 00:31:33,224 - INFO - starting the splitting process
+2025-03-12 00:31:33,621 - INFO - Train data saved to artifacts/raw\train.csv
+2025-03-12 00:31:33,621 - INFO - Train data saved to artifacts/raw\test.csv
+2025-03-12 00:31:33,621 - INFO - Data Ingestion completed successfully
+2025-03-12 00:31:33,621 - INFO - Data Ingestion process completed

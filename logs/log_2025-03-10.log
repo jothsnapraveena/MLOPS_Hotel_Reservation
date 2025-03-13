@@ -1,0 +1,4 @@
+2025-03-10 23:26:57,376 - INFO - Hello
+2025-03-10 23:48:07,249 - INFO - staring main program
+2025-03-10 23:48:07,250 - ERROR - Error occured
+2025-03-10 23:48:07,250 - ERROR - Error inD:\Hotel_Reservation\test_logger.py:,line 10 :custom error division by zero
