@@ -1,0 +1,108 @@
+2025-03-15 12:29:18,274 - INFO - Succesfully read the YAML file
+2025-03-15 12:29:18,275 - INFO - Starting data processing
+2025-03-15 12:29:18,275 - INFO - loading data
+2025-03-15 12:29:18,476 - INFO - loading data
+2025-03-15 12:29:18,513 - INFO - Starting preprocessing
+2025-03-15 12:29:18,513 - INFO - Dropping irrelevant columns
+2025-03-15 12:29:18,568 - INFO - Label encoding
+2025-03-15 12:29:18,616 - INFO - Label Mappings are : 
+2025-03-15 12:29:18,616 - INFO - type_of_meal_plan : {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2025-03-15 12:29:18,616 - INFO - required_car_parking_space : {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-03-15 12:29:18,617 - INFO - room_type_reserved : {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2025-03-15 12:29:18,617 - INFO - market_segment_type : {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2025-03-15 12:29:18,617 - INFO - repeated_guest : {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-03-15 12:29:18,618 - INFO - booking_status : {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2025-03-15 12:29:18,618 - INFO - Skewness handling:
+2025-03-15 12:29:18,633 - INFO - Starting preprocessing
+2025-03-15 12:29:18,633 - INFO - Dropping irrelevant columns
+2025-03-15 12:29:18,650 - INFO - Label encoding
+2025-03-15 12:29:18,669 - INFO - Label Mappings are : 
+2025-03-15 12:29:18,669 - INFO - type_of_meal_plan : {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2025-03-15 12:29:18,669 - INFO - required_car_parking_space : {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-03-15 12:29:18,669 - INFO - room_type_reserved : {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2025-03-15 12:29:18,670 - INFO - market_segment_type : {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2025-03-15 12:29:18,670 - INFO - repeated_guest : {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2025-03-15 12:29:18,671 - INFO - booking_status : {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2025-03-15 12:29:18,671 - INFO - Skewness handling:
+2025-03-15 12:29:18,681 - INFO - Hanlding Imbalance datae
+2025-03-15 12:29:19,129 - INFO - Data balanced successfully
+2025-03-15 12:29:19,130 - INFO - Hanlding Imbalance datae
+2025-03-15 12:29:19,162 - INFO - Data balanced successfully
+2025-03-15 12:29:19,163 - INFO - Feature selection started
+2025-03-15 12:29:20,394 - INFO - Top 10 features selected are : ['no_of_previous_cancellations' 'no_of_previous_bookings_not_canceled'
+ 'no_of_special_requests' 'lead_time' 'market_segment_type'
+ 'avg_price_per_room' 'arrival_month' 'required_car_parking_space'
+ 'repeated_guest' 'arrival_year'] 
+2025-03-15 12:29:20,399 - INFO - Top 10 features selected successfully
+2025-03-15 12:29:20,402 - INFO - Saving processed data to artifacts/processed\processed_train.csv
+2025-03-15 12:29:20,648 - INFO - Saving processed data to artifacts/processed\processed_test.csv
+2025-03-15 12:29:20,716 - INFO - Data processing completed successfully
+2025-03-15 14:20:27,750 - INFO - Starting our Model Training pipeline
+2025-03-15 14:20:27,750 - INFO - Starting our MLFLOW experimentation
+2025-03-15 14:20:27,751 - INFO - Logging the training and testing datset to MLFLOW
+2025-03-15 14:20:27,764 - INFO - Loading data from artifacts/processed\processed_test.csv
+2025-03-15 14:20:27,765 - INFO - loading data
+2025-03-15 14:20:27,853 - INFO - Loading data from artifacts/processed\processed_test.csv
+2025-03-15 14:20:27,854 - INFO - loading data
+2025-03-15 14:20:27,879 - INFO - Data splitted sucefully for Model Training
+2025-03-15 14:20:27,880 - INFO - Intializing our model
+2025-03-15 14:20:27,880 - INFO - Starting our Hyperparamter tuning
+2025-03-15 14:20:27,880 - INFO - Starting our Hyperparamter tuning
+2025-03-15 14:21:00,822 - INFO - Hyperparamter tuning completed
+2025-03-15 14:21:00,822 - INFO - Best paramters are : {'boosting_type': 'goss', 'learning_rate': np.float64(0.1693085973720466), 'max_depth': 19, 'n_estimators': 206, 'num_leaves': 91}
+2025-03-15 14:21:00,822 - INFO - Evaluating our model
+2025-03-15 14:21:00,865 - INFO - Accuracy Score : 1.0
+2025-03-15 14:21:00,865 - INFO - Precision Score : 1.0
+2025-03-15 14:21:00,865 - INFO - Recall Score : 1.0
+2025-03-15 14:21:00,865 - INFO - F1 Score : 1.0
+2025-03-15 14:21:00,866 - INFO - saving the model
+2025-03-15 14:21:00,874 - INFO - Model saved to artifacts/models/lgbm_model.pkl
+2025-03-15 14:21:00,874 - INFO - Logging the model into MLFLOW
+2025-03-15 14:21:00,879 - INFO - Logging Params and metrics to MLFLOW
+2025-03-15 14:21:00,924 - INFO - Model Training sucesfullly completed
+2025-03-15 15:19:22,055 - INFO - Starting our Model Training pipeline
+2025-03-15 15:19:22,055 - INFO - Starting our MLFLOW experimentation
+2025-03-15 15:19:22,055 - INFO - Logging the training and testing datset to MLFLOW
+2025-03-15 15:19:22,068 - INFO - Loading data from artifacts/processed\processed_test.csv
+2025-03-15 15:19:22,068 - INFO - loading data
+2025-03-15 15:19:22,108 - INFO - Loading data from artifacts/processed\processed_test.csv
+2025-03-15 15:19:22,108 - INFO - loading data
+2025-03-15 15:19:22,141 - INFO - Data splitted sucefully for Model Training
+2025-03-15 15:19:22,141 - INFO - Intializing our model
+2025-03-15 15:19:22,141 - INFO - Starting our Hyperparamter tuning
+2025-03-15 15:19:22,141 - INFO - Starting our Hyperparamter tuning
+2025-03-15 15:19:42,348 - INFO - Hyperparamter tuning completed
+2025-03-15 15:19:42,348 - INFO - Best paramters are : {'boosting_type': 'goss', 'learning_rate': np.float64(0.1693085973720466), 'max_depth': 19, 'n_estimators': 206, 'num_leaves': 91}
+2025-03-15 15:19:42,348 - INFO - Evaluating our model
+2025-03-15 15:19:42,388 - INFO - Accuracy Score : 1.0
+2025-03-15 15:19:42,388 - INFO - Precision Score : 1.0
+2025-03-15 15:19:42,388 - INFO - Recall Score : 1.0
+2025-03-15 15:19:42,388 - INFO - F1 Score : 1.0
+2025-03-15 15:19:42,388 - INFO - saving the model
+2025-03-15 15:19:42,391 - INFO - Model saved to artifacts/models/lgbm_model.pkl
+2025-03-15 15:19:42,391 - INFO - Logging the model into MLFLOW
+2025-03-15 15:19:42,403 - INFO - Logging Params and metrics to MLFLOW
+2025-03-15 15:19:42,441 - INFO - Model Training sucesfullly completed
+2025-03-15 15:23:17,257 - INFO - Starting our Model Training pipeline
+2025-03-15 15:23:17,257 - INFO - Starting our MLFLOW experimentation
+2025-03-15 15:23:17,257 - INFO - Logging the training and testing datset to MLFLOW
+2025-03-15 15:23:17,277 - INFO - Loading data from artifacts/processed\processed_train.csv
+2025-03-15 15:23:17,279 - INFO - loading data
+2025-03-15 15:23:17,374 - INFO - Loading data from artifacts/processed\processed_test.csv
+2025-03-15 15:23:17,374 - INFO - loading data
+2025-03-15 15:23:17,398 - INFO - Data splitted sucefully for Model Training
+2025-03-15 15:23:17,398 - INFO - Intializing our model
+2025-03-15 15:23:17,398 - INFO - Starting our Hyperparamter tuning
+2025-03-15 15:23:17,398 - INFO - Starting our Hyperparamter tuning
+2025-03-15 15:24:01,033 - INFO - Hyperparamter tuning completed
+2025-03-15 15:24:01,033 - INFO - Best paramters are : {'boosting_type': 'goss', 'learning_rate': np.float64(0.1693085973720466), 'max_depth': 19, 'n_estimators': 206, 'num_leaves': 91}
+2025-03-15 15:24:01,033 - INFO - Evaluating our model
+2025-03-15 15:24:01,090 - INFO - Accuracy Score : 1.0
+2025-03-15 15:24:01,090 - INFO - Precision Score : 1.0
+2025-03-15 15:24:01,090 - INFO - Recall Score : 1.0
+2025-03-15 15:24:01,090 - INFO - F1 Score : 1.0
+2025-03-15 15:24:01,090 - INFO - saving the model
+2025-03-15 15:24:01,106 - INFO - Model saved to artifacts/models/lgbm_model.pkl
+2025-03-15 15:24:01,106 - INFO - Logging the model into MLFLOW
+2025-03-15 15:24:01,106 - INFO - Logging Params and metrics to MLFLOW
+2025-03-15 15:24:01,171 - INFO - Model Training sucesfullly completed

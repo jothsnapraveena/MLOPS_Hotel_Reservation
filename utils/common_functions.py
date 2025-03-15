@@ -16,5 +16,13 @@ def read_yaml(file_path):
             return config
     except Exception as e:
         logger.error("Error while reading YAML file",e)
+        raise CustomException("Error while reading YAML file",e) 
         
         
+def load_data(path):
+    try:
+        logger.info("loading data")
+        return pd.read_csv(path)
+    except Exception as e:
+        logger.error(f"Error while loading data")
+        raise CustomException(f"Error while loading data",e)
