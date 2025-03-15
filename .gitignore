@@ -1,5 +1,5 @@
-hres
-MLOPS_Project_1.egg-info
-artifacts
-mlruns
+hres/
+MLOPS_Project_1.egg-info/
+logs/
+mlruns/
 
