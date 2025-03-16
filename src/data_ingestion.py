@@ -7,7 +7,7 @@ from src.logger import get_logger
 from config.paths_config import *
 from utils.common_functions import read_yaml
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"]=r"C:\Users\joths\Downloads\dazzling-ego-453401-c9-7c45c117aaf0.json"
+# os.environ["GOOGLE_APPLICATION_CREDENTIALS"]=r"C:\Users\joths\Downloads\dazzling-ego-453401-c9-7c45c117aaf0.json"
 
 logger=get_logger(__name__)
 class DataIngestion:
