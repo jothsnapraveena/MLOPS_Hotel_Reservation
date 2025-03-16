@@ -16,8 +16,6 @@ The project automates **data ingestion, preprocessing, model training, and deplo
 
 ---
 
----
-
 ## ⚙️ Technologies Used
 
 | Tool | Purpose |
