@@ -17,6 +17,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Copy the application code
 COPY . .
 
+
+
 # Install the package in editable mode
 RUN pip install --no-cache-dir -e .
 
