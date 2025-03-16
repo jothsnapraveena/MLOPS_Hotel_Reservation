@@ -115,10 +115,10 @@ pipeline {
             }
         }
 
-        stage('Building and Pushing Docker Image to GCR'){
-            steps{
-                withCredentials([file(credentialsId: 'gcp-key' , variable : 'GOOGLE_APPLICATION_CREDENTIALS')]){
-                    script{
+        stage('Building and Pushing Docker Image to GCR') {
+            steps {
+                withCredentials([file(credentialsId: 'gcp-key', variable: 'GOOGLE_APPLICATION_CREDENTIALS')]) {
+                    script {
                         echo 'Building and Pushing Docker Image to GCR.............'
                         sh '''
                         export PATH=$PATH:${GCLOUD_PATH}
@@ -138,10 +138,26 @@ pipeline {
             }
         }
 
-        stage('Deploy to Google Cloud Run'){
-            steps{
-                withCredentials([file(credentialsId: 'gcp-key' , variable : 'GOOGLE_APPLICATION_CREDENTIALS')]){
-                    script{
+        stage('Run Docker Container for Training') {
+            steps {
+                withCredentials([file(credentialsId: 'gcp-key', variable: 'GOOGLE_APPLICATION_CREDENTIALS')]) {
+                    script {
+                        echo 'Running Docker Container for Training...'
+                        sh '''
+                        docker run --rm \
+                            -e GOOGLE_APPLICATION_CREDENTIALS=/app/credentials.json \
+                            -v ${GOOGLE_APPLICATION_CREDENTIALS}:/app/credentials.json \
+                            gcr.io/${GCP_PROJECT}/ml-project:latest
+                        '''
+                    }
+                }
+            }
+        }
+
+        stage('Deploy to Google Cloud Run') {
+            steps {
+                withCredentials([file(credentialsId: 'gcp-key', variable: 'GOOGLE_APPLICATION_CREDENTIALS')]) {
+                    script {
                         echo 'Deploying to Google Cloud Run.............'
                         sh '''
                         export PATH=$PATH:${GCLOUD_PATH}
