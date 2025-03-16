@@ -7,7 +7,7 @@ from src.logger import get_logger
 from config.paths_config import *
 from utils.common_functions import read_yaml
 
-# os.environ["GOOGLE_APPLICATION_CREDENTIALS"]=r"C:\Users\joths\Downloads\dazzling-ego-453401-c9-7c45c117aaf0.json"
+
 
 if "GOOGLE_APPLICATION_CREDENTIALS" in os.environ:
     print(f"Using GCP Credentials from: {os.environ['GOOGLE_APPLICATION_CREDENTIALS']}")
